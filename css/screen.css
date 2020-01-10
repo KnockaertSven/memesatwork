@@ -1,0 +1,138 @@
+:root {
+  --color-black: #333;
+}
+
+html, body {
+  font-size: 62.5%;
+}
+
+body {
+  /*background: url('./../images/wallpaper2.jpg') no-repeat;
+  background-size: 100vw 100vh;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #eee;
+  color: var(--color-black);
+}
+
+#container {
+  text-align: center;
+}
+header {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+#title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  margin-bottom: 10px;
+}
+#subtitle {
+  font-family: 'Tangerine', cursive;
+  display: inline-block;
+  padding-top: 10px;
+  border-top: 2px solid var(--color-black);
+  font-size: 3.6rem;
+}
+.hidden {
+  display: none;
+}
+#content {
+  text-align: center;
+}
+.box-item {
+  text-align: left;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 30px;
+
+  -webkit-box-shadow: 0px 20px 20px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 20px 20px 0px rgba(204,204,204,1);
+  box-shadow: 0px 20px 20px 0px rgba(204,204,204,1);
+}
+.box-item-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.major-img {
+  display: block;
+  width: 80vw;
+  min-width: 280px;
+  max-width: 480px;
+}
+.minor-img {
+  display: inline-block;
+  width: 20vw;
+  min-width: 70px;
+  max-width: 160px;
+}
+#wallpaper {
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url('./../images/pattern.jpg');
+  background-size: 50px 50px;
+  opacity: 0.3;
+}
+#overlay {
+  background: rgba(255,255,255,0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+#overlay p {
+  height: 200px;
+  margin-top: calc(50vh - 100px);
+}
+
+
+
+
+
+
+
+
+/* FONTS */
+/* --------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('./font/OpenSans-Light.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('./font/OpenSans-Thin.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('./font/OpenSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('./font/OpenSans-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('./font/OpenSans-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('./font/OpenSans-Black.ttf');
+  font-weight: 900;
+}
